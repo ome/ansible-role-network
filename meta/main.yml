@@ -1,0 +1,13 @@
+galaxy_info:
+  author: ome-devel@lists.openmicroscopy.org.uk
+  description: Set up custom network interface configurations for a server
+  company: Open Microscopy Environment
+  license: BSD
+  min_ansible_version: 2.3
+  platforms:
+  - name: EL
+    versions:
+    - 7
+  galaxy_tags: []
+
+dependencies: []
