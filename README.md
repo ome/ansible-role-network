@@ -1,6 +1,9 @@
 Network
 =======
 
+[![Build Status](https://travis-ci.org/openmicroscopy/ansible-role-network.svg)](https://travis-ci.org/openmicroscopy/ansible-role-network)
+[![Ansible Role](https://img.shields.io/ansible/role/22499.svg)](https://galaxy.ansible.com/openmicroscopy/network/)
+
 Set up custom network interface configurations for a server.
 
 
