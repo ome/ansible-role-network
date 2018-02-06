@@ -9,39 +9,6 @@ IPV6INIT={{ item.ipv6init }}
 {% else %}
 IPV6INIT=yes
 {% endif %}
-{% if 'defroute' in item %}
-DEFROUTE={{ item.defroute }}
-{% endif %}
-{% if 'domain' in item %}
-DOMAIN={{ item.domain }}
-{% endif %}
-{% if 'ipv4_failure_fatal' in item %}
-IPV4_FAILURE_FATAL={{ item.ipv4_failure_fatal }}
-{% endif %}
-{% if 'ipv6_addr_gen_mode' in item %}
-IPV6_ADDR_GEN_MODE={{ item.ipv6_addr_gen_mode }}
-{% endif %}
-{% if 'ipv6_autoconf' in item %}
-IPV6_AUTOCONF={{ item.ipv6_autoconf }}
-{% endif %}
-{% if 'ipv6_defroute' in item %}
-IPV6_DEFROUTE={{ item.ipv6_defroute }}
-{% endif %}
-{% if 'ipv6_failure_fatal' in item %}
-IPV6_FAILURE_FATAL={{ item.ipv6_failure_fatal }}
-{% endif %}
-{% if 'ipv6_peerdns' in item %}
-IPV6_PEERDNS={{ item.ipv6_peerdns }}
-{% endif %}
-{% if 'ipv6_peerroutes' in item %}
-IPV6_PEERROUTES={{ item.ipv6_peerroutes }}
-{% endif %}
-{% if 'name' in item %}
-NAME={{ item.name }}
-{% endif %}
-{% if 'uuid' in item %}
-UUID={{ item.uuid }}
-{% endif %}
 {% if 'mtu' in item and item['mtu'] %}
 MTU={{ item.mtu }}
 {% endif %}
