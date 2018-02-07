@@ -47,10 +47,8 @@ DNS2={{ item.dns2 }}
 BRIDGE={{ item.bridge }}
 {% endif %}
 USERCTL=no
-{% if item.additional_params is defined and item.additional_params %}
-{%   for param, value in item.additional_params.items() %}{{ param|upper }}={{ value }}
-{%   endfor %}
-{% endif %}
+{% for param, value in ((item.additional_params.items() | default({})) | sort) %}{{ param|upper }}={{ value }}
+{% endfor %}
 {% if 'bondmaster' in item %}
 {%   if item.bondmaster == item.device %}
 {%     if 'type' not in item %}
