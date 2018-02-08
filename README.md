@@ -17,7 +17,27 @@ Role Variables
 - `network_delete_ifaces`: A regular expression describing the network device name(s) to be removed (note this means the system may auto-configure them), use this for cleaning up spare configuration files.
 - `additional_params`: A dictionary containing additional parameters to be added to the interface configuration file. Keys will be set to upper case, and values will be set as supplied.
 
-
+The set of network parameters which can be defined in `network_ifaces` are as follows. If these are not defined, and the parameter has a default value, it will be added with that default value.
+- bondmaster (not a parameter, per se, but configures bonding. See example below.)
+- bootproto (default: none)
+- bridge
+- device
+- devicetype
+- dns1
+- dns2
+- gateway
+- hwaddr
+- ipaddr
+- ipv6init (default: yes)
+- mtu
+- netmask
+- nm_controlled
+- onboot
+- ovs_bridge
+- prefix
+- type
+- userctl
+ 
 Example Playbook
 ----------------
 
