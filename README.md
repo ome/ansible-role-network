@@ -34,6 +34,8 @@ The set of network parameters which can be defined in `network_ifaces` are as fo
 - ovsbridge
 - prefix
 - type
+
+NB `ONBOOT=yes` is set by default, and is not configurable.
  
 Example Playbook
 ----------------
