@@ -15,7 +15,7 @@ Role Variables
 - `network_ifaces[].bondmaster`: If specified this NIC will be part of a bonded interface. If the `device` name matches `bondmaster` it will be set as the master, otherwise it will be a slave of `bondmaster`.
 - `network_disable_ifaces`: A list of network device names to be explicitly disabled, use this if you want to be sure the interface is disabled (as opposed to being auto-configured by the system).
 - `network_delete_ifaces`: A regular expression describing the network device name(s) to be removed (note this means the system may auto-configure them), use this for cleaning up spare configuration files.
-- `additional_params`: A dictionary containing additional parameters to be added to the interface configuration file. Keys will be set to upper case, and values will be set as supplied.
+- `network_additional_params`: A dictionary containing additional parameters to be added to the interface configuration file. Keys will be set to upper case, and values will be set as supplied.
 
 The set of network parameters which can be defined in `network_ifaces` are as follows. If these are not defined, and the parameter has a default value, it will be added with that default value.
 - bondmaster (not a parameter, per se, but configures bonding. See example below.)
