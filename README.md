@@ -27,16 +27,13 @@ The set of network parameters which can be defined in `network_ifaces` are as fo
 - dns2
 - gateway
 - hwaddr
-- ipaddr
+- ip
 - ipv6init (default: yes)
 - mtu
 - netmask
-- nm_controlled
-- onboot
-- ovs_bridge
+- ovsbridge
 - prefix
 - type
-- userctl
  
 Example Playbook
 ----------------
