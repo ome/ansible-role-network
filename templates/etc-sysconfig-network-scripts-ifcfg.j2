@@ -47,6 +47,8 @@ DNS2={{ item.dns2 }}
 BRIDGE={{ item.bridge }}
 {% endif %}
 USERCTL=no
+{% for param, value in ((item.network_additional_params.items() | default({})) | sort) %}{{ param|upper }}={{ value }}
+{% endfor %}
 {% if 'bondmaster' in item %}
 {%   if item.bondmaster == item.device %}
 {%     if 'type' not in item %}
