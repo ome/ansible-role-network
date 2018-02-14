@@ -53,7 +53,7 @@ Example Playbook
           dns1: 8.8.4.4
           dns2: 8.8.8.8
           network_additional_params:
-            ipv6_autoconf: no
+            ipv6_autoconf: "no"
 
     # Bonded network combining eth0 and eth1
     - hosts: localhost
