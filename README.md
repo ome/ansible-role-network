@@ -1,8 +1,8 @@
 Network
 =======
 
-[![Build Status](https://travis-ci.org/openmicroscopy/ansible-role-network.svg)](https://travis-ci.org/openmicroscopy/ansible-role-network)
-[![Ansible Role](https://img.shields.io/ansible/role/22499.svg)](https://galaxy.ansible.com/openmicroscopy/network/)
+[![Build Status](https://travis-ci.org/ome/ansible-role-network.svg)](https://travis-ci.org/ome/ansible-role-network)
+[![Ansible Role](https://img.shields.io/ansible/role/22499.svg)](https://galaxy.ansible.com/ome/network/)
 
 Set up custom network interface configurations for a server.
 
@@ -43,7 +43,7 @@ Example Playbook
     # Simple network
     - hosts: localhost
       roles:
-      - role: network
+      - role: ome.network
         network_ifaces:
         - device: eth0
           ip: 192.168.1.1
@@ -58,7 +58,7 @@ Example Playbook
     # Bonded network combining eth0 and eth1
     - hosts: localhost
       roles:
-      - role: network
+      - role: ome.network
         network_ifaces:
         - device: bond0
           ip: 192.168.1.1

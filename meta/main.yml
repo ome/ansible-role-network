@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: network
   author: ome-devel@lists.openmicroscopy.org.uk
   description: Set up custom network interface configurations for a server
   company: Open Microscopy Environment
