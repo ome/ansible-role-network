@@ -2,7 +2,7 @@ Network
 =======
 
 [![Build Status](https://travis-ci.org/ome/ansible-role-network.svg)](https://travis-ci.org/ome/ansible-role-network)
-[![Ansible Role](https://img.shields.io/ansible/role/22499.svg)](https://galaxy.ansible.com/ome/network/)
+[![Ansible Role](https://img.shields.io/ansible/role/41368.svg)](https://galaxy.ansible.com/ome/network/)
 
 Set up custom network interface configurations for a server.
 
