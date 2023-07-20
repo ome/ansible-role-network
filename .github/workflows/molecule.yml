@@ -40,10 +40,6 @@ jobs:
       - name: Run molecule
         run: molecule test -s "${{ matrix.scenario }}"
 
-      #- uses: ome/action-ome-ansible-molecule@main
-      #  with:
-      #    scenario: ${{ matrix.scenario }}
-
   publish:
     name: Galaxy
     if: startsWith(github.ref, 'refs/tags')
