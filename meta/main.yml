@@ -5,11 +5,12 @@ galaxy_info:
   description: Set up custom network interface configurations for a server
   company: Open Microscopy Environment
   license: BSD
-  min_ansible_version: 2.3
+  # points to the version of the ansible-core package
+  min_ansible_version: 2.13
   platforms:
     - name: EL
       versions:
-        - 7
+        - 9
   namespace: ome
   galaxy_tags: []
 
