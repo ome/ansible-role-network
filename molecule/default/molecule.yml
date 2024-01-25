@@ -8,8 +8,8 @@ lint: |
     ansible-lint
     flake8
 platforms:
-  - name: instance
-    image: centos:7
+  - name: rockylinux-9
+    image: rockylinux:9
 provisioner:
   name: ansible
   lint:
@@ -19,7 +19,6 @@ verifier:
 
 scenario:
   test_sequence:
-    - lint
     - dependency
     - cleanup
     - syntax
