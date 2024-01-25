@@ -6,7 +6,7 @@ galaxy_info:
   company: Open Microscopy Environment
   license: BSD
   # points to the version of the ansible-core package
-  min_ansible_version: 2.13
+  min_ansible_version: 2.10
   platforms:
     - name: EL
       versions:
